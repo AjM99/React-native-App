@@ -98,7 +98,7 @@ const  DetailStackScreen=({navigation}) =>
       }
       }}> 
         <DetailStack.Screen  //stack navi is for creating screen 
-        name="    Detail" component={DetailScreen} 
+        name="Detail" component={DetailScreen} 
         /> 
     </DetailStack.Navigator>
   )
