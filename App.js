@@ -73,7 +73,7 @@ const  HomeStackScreen=({navigation}) =>
           title:'Overview',
           headerLeft:()=>
           (
-            <Ionicons.Button name='add.' size={20} marginleft={50} />
+            <Ionicons.Button name='add' size={20} marginleft={50} />
           )
           
         }}
@@ -86,18 +86,18 @@ const  HomeStackScreen=({navigation}) =>
 const  DetailStackScreen=({navigation}) =>
 {
   return(
-    <DetailStack.Navigator screenOptions={{       //screen options arediffent than stylesheet/style
+    <DetailStack.Navigator screenOptions={{       
       headerStyle:
       {
         backgroundColor:'#ffff00'
       },
-      headerTintColor:'#000000',//header tint is title color
+      headerTintColor:'#000000',
       headerTitleStyle:
       {
         fontWeight:'bold',
       }
       }}> 
-        <DetailStack.Screen  //stack navi is for creating screen 
+        <DetailStack.Screen  
         name="Detail" component={DetailScreen} 
         /> 
     </DetailStack.Navigator>
@@ -105,10 +105,32 @@ const  DetailStackScreen=({navigation}) =>
 }
 
 
+const  UltraDetailStackScreen=({navigation}) =>
+{
+  return(
+    <UltraDetailStack.Navigator screenOptions={{       
+      headerStyle:
+      {
+        backgroundColor:'#ffff00'
+      },
+      headerTintColor:'#000000',
+      headerTitleStyle:
+      {
+        fontWeight:'bold',
+      }
+      }}> 
+        <UltraDetailStack.Screen  
+        name="UltraDetail" component={UltraDetailScreen} 
+        /> 
+    </UltraDetailStack.Navigator>
+  )
+}
+
 
 // after importing we have to declare all constants for the imported stuff
 const HomeStack = createStackNavigator();
 const DetailStack = createStackNavigator();
+const UltraDetailStack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
 
@@ -120,7 +142,7 @@ const  App = () =>
      <Drawer.Navigator initialRouteName="Home">
       <Drawer.Screen name="Home" component={HomeStackScreen} />
       <Drawer.Screen name="Detail" component={DetailStackScreen} />
-      <Drawer.Screen name="UltraDetail" component={UltraDetailScreen} />
+      <Drawer.Screen name="UltraDetail" component={UltraDetailStackScreen} />
      </Drawer.Navigator>
       {/*<Stack.Navigator screenOptions={{       //screen options arediffent than stylesheet/style
       headerStyle:
