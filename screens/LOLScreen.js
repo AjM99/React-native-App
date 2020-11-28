@@ -6,8 +6,8 @@ const LOLScreen= ({navigation}) =>
 {
   return (                
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={styles.AppDesign}>   This is thaa LOL Screen</Text>    
-      <Button style={styles.AppDesign}
+      <Text style={styles.TextDesign}>   This is thaa LOL Screen</Text>    
+      <Button style={styles.TextDesign}
       title='profile!!!'
       onPress={() =>navigation.navigate("Profile")}
       /> 
@@ -18,7 +18,7 @@ const LOLScreen= ({navigation}) =>
 export default LOLScreen;
 const styles = StyleSheet.create({  
  
-    AppDesign:
+    TextDesign:
     {
       marginBottom:5,
       padding:5

@@ -1,3 +1,4 @@
+//this is entirely for the bottom tab menu and navigation
 import * as React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { View, Text,Button,StyleSheet } from 'react-native';
@@ -47,7 +48,7 @@ const MainTabScreen =() =>
           name="Details"
           component={DetailStackScreen}
           options={{
-            tabBarLabel: 'Details',
+            tabBarLabel: 'Wall',
             tabBarColor:'#80b3ff',
             tabBarIcon: ({ color }) => (
               <MaterialCommunityIcons name="bell" color={color} size={26} />
@@ -59,7 +60,7 @@ const MainTabScreen =() =>
           name="LOL"
           component={LOLStackScreen}
           options={{
-            tabBarLabel: 'LOL',
+            tabBarLabel: 'Explore',
             tabBarColor:'#ff66cc',
             tabBarIcon: ({ color }) => (
               <MaterialCommunityIcons name="account" color={color} size={26} />
@@ -70,7 +71,7 @@ const MainTabScreen =() =>
           name="UltraDetail"
           component={UltraDetailStackScreen}
           options={{
-            tabBarLabel: 'UDetail',
+            tabBarLabel: 'Notification',
             tabBarColor:'#d11aff',
             tabBarIcon: ({ color }) => (
               <MaterialCommunityIcons name="bell" color={color} size={26} />
@@ -141,7 +142,7 @@ const  DetailStackScreen=({navigation}) =>
       }
       }}> 
         <DetailStack.Screen  
-        name="Detail" component={DetailScreen} 
+        name="Wall" component={DetailScreen} 
         options={{
           headerLeft:()=>
           (
@@ -174,7 +175,7 @@ const  UltraDetailStackScreen=({navigation}) =>
       }
       }}> 
         <UltraDetailStack.Screen  
-        name="UltraDetail" component={UltraDetailScreen} 
+        name="Notification" component={UltraDetailScreen} 
         options={{
           headerLeft:()=>
           (
@@ -206,7 +207,7 @@ const LOLStackScreen=({navigation}) =>
       }
       }}> 
         <LOLStack.Screen  
-        name="LOL" component={LOLScreen} 
+        name="Explore" component={LOLScreen} 
         options={{
           headerLeft:()=>
           (

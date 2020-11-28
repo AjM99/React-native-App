@@ -15,9 +15,9 @@ const  App = () =>
     <NavigationContainer>
      <Drawer.Navigator initialRouteName="Home">
       <Drawer.Screen name="Home" component={MainTabScreen} />
-      <Drawer.Screen name="Detail" component={MainTabScreen} />
-      <Drawer.Screen name="UltraDetail" component={MainTabScreen} />
-      <Drawer.Screen name="LOL" component={MainTabScreen} />
+      <Drawer.Screen name="Wall" component={MainTabScreen} />
+      <Drawer.Screen name="Notification" component={MainTabScreen} />
+      <Drawer.Screen name="Explore" component={MainTabScreen} />
       <Drawer.Screen name="Profile" component={MainTabScreen} />
      </Drawer.Navigator>
       {/*<Stack.Navigator screenOptions={{       //screen options arediffent than stylesheet/style

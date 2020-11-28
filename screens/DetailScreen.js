@@ -5,9 +5,9 @@ const DetailScreen= ({navigation}) =>
 {
   return (                
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={styles.AppDesign}>This is thaa Detail Screen</Text>  
+      <Text style={styles.TextDesign}>This is thaa Detail Screen</Text>  
       
-      <Button style={styles.AppDesign}
+      <Button style={styles.TextDesign}
       title='press to open UltraDetail !!!'
       onPress={() =>navigation.navigate("UltraDetail")}
       />   
@@ -19,7 +19,7 @@ const DetailScreen= ({navigation}) =>
 export default DetailScreen;
 const styles = StyleSheet.create({  
  
-    AppDesign:
+    TextDesign:
     {
       marginBottom:5,
       padding:5

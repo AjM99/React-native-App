@@ -6,9 +6,9 @@ const UltraDetailScreen= ({navigation}) =>
 {
   return (                
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={styles.AppDesign}>This is thaa UltraDetail Screen</Text>    
+      <Text style={styles.TextDesign}>This is thaa UltraDetail Screen</Text>    
 
-      <Button style={styles.AppDesign}
+      <Button style={styles.TextDesign}
       title='LOL !!!'
       onPress={() =>navigation.navigate("LOL")}
       /> 
@@ -19,7 +19,7 @@ const UltraDetailScreen= ({navigation}) =>
 export default UltraDetailScreen;
 const styles = StyleSheet.create({  
  
-    AppDesign:
+    TextDesign:
     {
       marginBottom:5,
       padding:5
