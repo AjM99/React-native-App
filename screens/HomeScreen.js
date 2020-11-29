@@ -7,7 +7,7 @@ const HomeScreen =({navigation}) =>
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text style={styles.TextDesign}>This is thaa Home Screen</Text>  
       <Button style={styles.ButtonDesign}
-      title='press to open Detail !!'
+      title='press    to open Detail !!'
       onPress={() =>navigation.navigate("Detail")//the name Detail should be same as screeen
                }
       />
