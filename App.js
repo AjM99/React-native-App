@@ -5,7 +5,7 @@ import { View, Text,Button,StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';// for left slide
 import MainTabScreen from './screens/MainTabScreen';
-
+import { DrawerContent } from "./screens/Drawer";
 
 const Drawer = createDrawerNavigator();
 
@@ -13,7 +13,7 @@ const  App = () =>
 {
   return (
     <NavigationContainer>
-     <Drawer.Navigator initialRouteName="Home">
+     <Drawer.Navigator drawerContent={props => <DrawerContent {...props} />}>
       <Drawer.Screen name="Home" component={MainTabScreen} />
       <Drawer.Screen name="Wall" component={MainTabScreen} />
       <Drawer.Screen name="Notification" component={MainTabScreen} />

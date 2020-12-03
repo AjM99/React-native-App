@@ -1,4 +1,4 @@
-//this is entirely for the bottom tab menu and navigation
+//this is entirely for the BOTTOM TAB menu and navigation
 import * as React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { View, Text,Button,StyleSheet } from 'react-native';
@@ -51,7 +51,7 @@ const MainTabScreen =() =>
             tabBarLabel: 'Wall',
             tabBarColor:'#80b3ff',
             tabBarIcon: ({ color }) => (
-              <MaterialCommunityIcons name="bell" color={color} size={26} />
+              <MaterialCommunityIcons name="access-point" color={color} size={26} />
             ),
           }}
         />
@@ -63,7 +63,7 @@ const MainTabScreen =() =>
             tabBarLabel: 'Explore',
             tabBarColor:'#ff66cc',
             tabBarIcon: ({ color }) => (
-              <MaterialCommunityIcons name="account" color={color} size={26} />
+              <MaterialCommunityIcons name="account-group" color={color} size={26} />
             ),
           }}
         />
