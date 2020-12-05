@@ -36,7 +36,7 @@ export function DrawerContent(props)
 }
 
 const styles = StyleSheet.create({
-    drawerContent:
+   /* drawerContent:
     {
         flex:1
     },
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
    drawerDesign:
    {
        margin:15,
-   },
+   },*/
    bottomDrawerDesign:
    {
        marginTop:'row',
