@@ -37,7 +37,7 @@ const MainTabScreen =() =>
           name="Home"
           component={HomeStackScreen}
           options={{
-            tabBarLabel: '  Home',
+            tabBarLabel: 'Home',
             tabBarColor:'#ffff66',
             tabBarIcon: ({ color }) => (
               <MaterialCommunityIcons name="home" color={color} size={26} />
