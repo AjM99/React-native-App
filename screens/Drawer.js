@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { View,Button,StyleSheet } from 'react-native';
+//import ProfileImg from './assets/ME.jpg'
 import { DrawerContentScrollView,DrawerItem } from '@react-navigation/drawer';
 import{Avatar,Text,Title,Caption,Drawer,praragraph,TouchableRipple,Switch} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -10,8 +11,17 @@ export function DrawerContent(props)
     return(
         <View style={{flex:1}}>
         <DrawerContentScrollView {...props}>
-            <View>
-                <Text> Main Content </Text>
+            <View  style={styles.drawerContent}>
+                <View style={styles.userInfoDesign}>
+                    <View>
+                        <Avatar.Image
+                            source={{uri:'https://www.wallpaperup.com/39828/nature_sea_ocean_coast_shore_sky_clouds_stone_rock.html' }}
+                            size={50}     
+                             
+                        />
+                    </View>
+                </View>
+                
             </View>
             
         </DrawerContentScrollView>
@@ -19,7 +29,7 @@ export function DrawerContent(props)
             <DrawerItem
                 icon={({color,size}) =>(
                     <Icon
-                    name='emoticon-sad-outline'
+                    name='emoticon-neutral-outline'
                     color={color}
                     size={size}
                     />
@@ -36,7 +46,7 @@ export function DrawerContent(props)
 }
 
 const styles = StyleSheet.create({
-   /* drawerContent:
+    drawerContent:
     {
         flex:1
     },
@@ -50,16 +60,16 @@ const styles = StyleSheet.create({
         marginTop:3,
         fontWeight:'bold',
     },
-    rowDesign:
-    {
-        marginTop: 20,
-        flexDirection:"row",
-        alignItems:'center',
-    },
     captionDesign:
     {
         fontSize:14,
         lineHeight:14,
+    },
+    rowDesign:
+    {
+        marginTop:20,
+        flexDirection:'row',
+        alignItems : 'center',
     },
     sectionDesign:
     {
@@ -74,11 +84,11 @@ const styles = StyleSheet.create({
     },
    drawerDesign:
    {
-       margin:15,
-   },*/
+       marginTop:15,
+   },
    bottomDrawerDesign:
    {
-       marginTop:'row',
+       marginTop:15,
        borderTopColor:'#ffffff',
        borderTopWidth:1
    },
