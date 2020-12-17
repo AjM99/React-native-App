@@ -142,7 +142,7 @@ const  DetailStackScreen=({navigation}) =>
       }
       }}> 
         <DetailStack.Screen  
-        name="Wall" component={DetailScreen} 
+        name="    Wall" component={DetailScreen} 
         options={{
           headerLeft:()=>
           (
