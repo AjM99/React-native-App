@@ -24,14 +24,76 @@ export function DrawerContent(props)
                         <Caption style={styles.captionDesign}>Aj.M</Caption>
                     </View>
                     </View>
-                    <View style={styles.rowDesign}>
-                            <Title>Followers</Title>
-                            <Paragraph>1k</Paragraph>
                     
+                <View style={styles.rowDesign}>
+                    <View>
+                            <Text style={{fontSize:17,fontWeight:'bold'}}>Followers</Text>
+                            <Paragraph>      12M </Paragraph>
+                            
                     </View>
-                </View>                
+                    <View style={{marginLeft:60}}>
+                        <Text style={{fontSize:17,fontWeight:'bold'}}>Following</Text>
+                        <Text>           200</Text>
+                    </View>
+                </View>    
+                </View>   
+                
+                
+
+                <Drawer.Section style={{marginTop:30}}> 
+                
+                <DrawerItem
+                icon={({color,size}) =>(
+                    <Icon
+                    name='home'
+                    color={color}
+                    size={size}
+                    />
+                )}
+                label= "Home"
+                />
+
+                <DrawerItem
+                icon={({color,size}) =>(
+                    <Icon
+                    name='bookmark'
+                    color={color}
+                    size={size}
+                    />
+                )}
+                label= "bookmark"
+                
+                />
+
+                <DrawerItem
+                icon={({color,size}) =>(
+                    <Icon
+                    name='laptop'
+                    color={color}
+                    size={size}
+                    />
+                )}
+                label= "Setting"
+                />
+
+                <DrawerItem
+                icon={({color,size}) =>(
+                    <Icon
+                    name='account'
+                    color={color}
+                    size={size}
+                    />
+                )}
+                label= "Profile"
+                />
+                </Drawer.Section>  
+
             </View>
+ 
             
+
+
+
         </DrawerContentScrollView>
         <Drawer.Section style ={styles.bottomDrawerDesign}>
             <DrawerItem
@@ -64,7 +126,7 @@ const styles = StyleSheet.create({
     },
     titleDesign:
     {
-        fontSize:20,
+        fontSize:23,
         marginTop:3,
         //fontWeight:'bold',
         //flexDirection:'column',
@@ -82,7 +144,7 @@ const styles = StyleSheet.create({
     },
     rowDesign:
     {
-        marginTop:20,
+        marginTop:30,
         flexDirection:'row',
         alignItems : 'center',
     },
@@ -97,10 +159,10 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         marginRight:3,
     },
-   drawerDesign:
+   /*drawerDesigning:
    {
        marginTop:15,
-   },
+   },*/
    bottomDrawerDesign:
    {
        marginTop:15,
