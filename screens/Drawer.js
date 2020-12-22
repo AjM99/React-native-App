@@ -51,8 +51,8 @@ export function DrawerContent(props)
                     />
                 )}
                 label= "Home"
+                onPress={() =>{props.navigation.navigate('Home')}}
                 />
-
                 <DrawerItem
                 icon={({color,size}) =>(
                     <Icon
@@ -61,10 +61,9 @@ export function DrawerContent(props)
                     size={size}
                     />
                 )}
-                label= "bookmark"
-                
+                label= "BookMark"  
+                onPress={() =>{props.navigation.navigate('BookMarkScreen')}}              
                 />
-
                 <DrawerItem
                 icon={({color,size}) =>(
                     <Icon
@@ -74,8 +73,8 @@ export function DrawerContent(props)
                     />
                 )}
                 label= "Setting"
+                onPress={() =>{props.navigation.navigate('SettingScreen')}}
                 />
-
                 <DrawerItem
                 icon={({color,size}) =>(
                     <Icon
@@ -85,6 +84,7 @@ export function DrawerContent(props)
                     />
                 )}
                 label= "Profile"
+                onPress={() =>{props.navigation.navigate('Profile')}}
                 />
                 </Drawer.Section>  
 

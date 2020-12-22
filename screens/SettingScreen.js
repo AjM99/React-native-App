@@ -2,8 +2,7 @@
 import React from 'react';
 import{View,Text,Button,StyleSheet} from 'react-native';
 
-const SettingScreen = () => 
-{
+const SettingScreen = () => {
   return (                
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text >This is thaa Setting Screen</Text>    
@@ -22,7 +21,8 @@ const styles = StyleSheet.create({
  
     TextDesign:
     {
-      marginBottom:5,
-      padding:5
+      marginBottom:15,
+      marginTop:15,
+      padding:15
     },
-})
+});

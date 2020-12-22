@@ -13,6 +13,7 @@ import DetailScreen from './DetailScreen';
 import UltraDetailScreen from './UltraDetailScreen';
 import LOLScreen from './LOLScreen';
 import ProfileScreen from './ProfileScreen';
+import SettingScreen from './SettingScreen';
 
 
 // after importing we have to declare all constants for the imported stuff
@@ -21,6 +22,7 @@ const DetailStack = createStackNavigator();
 const UltraDetailStack = createStackNavigator();
 const LOLStack = createStackNavigator();
 const ProfileStack = createStackNavigator();
+const SettingStack = createStackNavigator();
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -239,7 +241,7 @@ const ProfileStackScreen=({navigation}) =>
       }
       }}> 
         <ProfileStack.Screen  
-        name="Profile" component={ProfileScreen} 
+        name="Profile !" component={ProfileScreen} 
          options={{
           headerLeft:()=>
           (
@@ -255,6 +257,40 @@ const ProfileStackScreen=({navigation}) =>
         }}
         /> 
     </ProfileStack.Navigator>
+  )
+}
+
+const SettingStackScreen=({navigation}) =>
+{
+  return(
+    <SettingStack.Navigator screenOptions={{       
+      headerStyle:
+      {
+        backgroundColor:'#00e600'
+      },
+      headerTintColor:'#000000',
+      headerTitleStyle:
+      {
+        fontWeight:'bold',
+      }
+      }}> 
+        <SettingStack.Screen  
+        name="Setting !" component={SettingScreen} 
+         options={{
+          headerLeft:()=>
+          (
+            <Ionicons.Button 
+              name='ios-menu' 
+              size={25} 
+              backgroundColor="#00e600"
+              color ='black'
+              onPress={() => navigation.openDrawer()}         
+            />
+          )
+          
+        }}
+        /> 
+    </SettingStack.Navigator>
   )
 }
 

@@ -6,6 +6,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';// for left slide
 import MainTabScreen from './screens/MainTabScreen';
 import { DrawerContent } from "./screens/Drawer";
+import HomeScreen from './screens/HomeScreen';
+import SettingScreen from './screens/SettingScreen';
+import BookMarkScreen from './screens/BookMarkScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -14,11 +17,9 @@ const  App = () =>
   return (
     <NavigationContainer>
      <Drawer.Navigator drawerContent={props => <DrawerContent {...props} />}>
-      <Drawer.Screen name="Home" component={MainTabScreen} />
-      <Drawer.Screen name="Wall" component={MainTabScreen} />
-      <Drawer.Screen name="Notification" component={MainTabScreen} />
-      <Drawer.Screen name="Explore" component={MainTabScreen} />
-      <Drawer.Screen name="Profile" component={MainTabScreen} />
+      <Drawer.Screen name="HomeDrawer" component={MainTabScreen} />
+      <Drawer.Screen name="SettingScreen" component={SettingScreen} />
+      <Drawer.Screen name="BookMarkScreen" component={BookMarkScreen} />
      </Drawer.Navigator>
       {/*<Stack.Navigator screenOptions={{       //screen options arediffent than stylesheet/style
       headerStyle:

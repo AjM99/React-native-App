@@ -2,8 +2,7 @@
 import React from 'react';
 import{View,Text,Button,StyleSheet} from 'react-native';
 
-const BookMarkScreen = () => 
-{
+const BookMarkScreen = () => {
   return (                
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text >This    is thaa Bookmark Screen</Text>    
