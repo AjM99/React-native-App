@@ -16,7 +16,6 @@ const SettingScreen = () => {
 }
 
 export default SettingScreen;
-
 const styles = StyleSheet.create({  
  
     TextDesign:
