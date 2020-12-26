@@ -10,6 +10,7 @@ import HomeScreen from './screens/HomeScreen';
 import SettingScreen from './screens/SettingScreen';
 import BookMarkScreen from './screens/BookMarkScreen';
 import { useEffect } from 'react';
+import RootStackScreen from "./screens/Authen"
 
 const Drawer = createDrawerNavigator();
 
