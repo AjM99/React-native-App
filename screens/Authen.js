@@ -9,8 +9,8 @@ const RootStack =createStackNavigator();
 
 const RootStackkScreen = ({naviagtion}) =>(
     <RootStack.Navigator headerMode='none'>
-        <RootStack.Screen name='   SplashScreen' component={SplashScreen}/>    
-        <RootStack.Screen name='  SignInScreen' component={SplashScreen}/>
+        <RootStack.Screen name=' SplashScreen' component={SplashScreen}/>    
+        <RootStack.Screen name='   SignInScreen' component={SplashScreen}/>
         <RootStack.Screen name='   SignUpScreen' component={SplashScreen}/>
     </RootStack.Navigator>
 );
